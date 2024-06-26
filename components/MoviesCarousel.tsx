@@ -10,8 +10,8 @@ type Props = {
 
 function MoviesCarousel({ title, movies, isVertical }: Props) {
   return (
-    <div className="z-50">
-      <h2 className="text-xl px-5 lg:px-10 py-2 font-bold">{title}</h2>
+    <div className="z-10">
+      <h2 className="text-xl px-10 py-2 font-bold">{title}</h2>
       <div
         className={cn(
           "flex space-x-4 overflow-scroll px-5 lg:px-10 py-5 scrollbar-hide",
@@ -33,7 +33,7 @@ function MoviesCarousel({ title, movies, isVertical }: Props) {
                     {movie.title} ({movie.release_date?.split("-")[0]})
                   </p>
                   <hr className="mb-3"/>
-                  <p>{movie.overview}</p>
+                  <p className="lg:line-clamp-6">{movie.overview}</p>
                 </div>
               </div>
             ))
