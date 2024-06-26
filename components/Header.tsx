@@ -14,17 +14,12 @@ function Header() {
           alt="logo"
           height={100}
           width={120}
-          className="cursor-pointer invert-0 dark:invert"
+          className="cursor-pointer invert dark:invert"
         />
       </Link>
       <div className="flex space-x-2 items-center">
-        {/* GenreDropdown */}
         <GenreDropdown />
-        
-        {/* SearchInput */}
         <SearchInput />
-
-        {/* Theamtoggler */}
         <ThemeToggler />
       </div>
     </header>
